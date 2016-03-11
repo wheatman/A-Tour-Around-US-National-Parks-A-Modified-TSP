@@ -1,3 +1,20 @@
+#  This Source Code Form is subject to the terms of the Mozilla Public
+#  License, v. 2.0. If a copy of the MPL was not distributed with this
+#  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#############################################################################
+# this code is based on the work of Iain Dunning, Joey Huchette, Miles Lubin, and contributors
+# for an implementation of a standard TSP solver which can be found at the link below
+# JuMP
+# An algebraic modelling langauge for Julia
+# See http://github.com/JuliaOpt/JuMP.jl
+#############################################################################
+# tsp.jl
+#
+# Solves the travelling salesman problem using integer programming and
+# lazy generation of the subtour elimination constraints.
+#############################################################################
+
+
 using JuMP
 using Gurobi
 using Base.Test
